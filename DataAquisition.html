@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<!--inlcude Bootsrap CSS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<!--include custom CSS-->
+		<link rel="stylesheet" href="styles/mainCSS.css">
+	</head>
+	<body>
+		<header>
+		
+		<!--Bootstrap Navbar-->
+		
+		<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+		  <a class="navbar-brand" href = "index.html">Derick Thomas</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				  <a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Projects
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="VisualCalcs.html">Section Properties Calculator</a>		
+				  <a class="dropdown-item" href="WaterSampler.html">UAV Water Sample Collector</a>				  
+				</div>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Music.html">Music</a>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Resume.html">Resume</a>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>		
+		</header>
+		
+		
+		<div class="metaprojectcontainer">
+		<p>
+		<h3>Wind Turbine Data Transmitter</h3>
+		</p>
+		<div class="row">
+			<div class="col2">
+				<img src="pictures/Brain_Box.PNG" class="threeinarow">
+			</div>
+			<div class="col2">
+						<img src="pictures/3_Mags.PNG" class="threeinarow">
+			</div>
+			<div class="col2">
+				<img src="pictures/Test Setup.jpg" class="threeinarow">
+			</div>
+		</div>
+		
+		<p>
+			This project was a collaboration between the Portland State Electrical & Computer Engineering department
+			and a sponsor company that manufactures small-scale wind turbines. The goal of this project was to develop
+			a data acquisition system to remotely monitor the health and status of wind turbines. In addition to 
+			leading the team, I took on the firmware development to expand my experience with coding and working with microcontrollers. 
+		</p>
+	
+		<h4>Component Selection</h4>
+		
+		<p>
+			The sponsor company requested that the following data be collected at the following sample rates:
+			
+			<ul>
+				<li>Accelerations - 3 Axis:  120Hz</li>
+				<li>Turbine Rotation Rate: 50Hz</li>
+				<li>Wind Speed: 1Hz</li>
+				<li>Wind Direction: 1Hz</li>
+				<li>Ambient Temperature: 1Hz</li>
+				<li>Ambient Pressure: 1Hz</li>
+				<li>Ambient Humidity: 1Hz</li>
+				<li>Stator Temperature: 1Hz</li>
+				<li>Rotor Temperature: 1Hz</li>
+			</ul>
+		</p>
+		<p>
+			Sensors, Flash memory, an MCU and a radio that met criteria for operating temperature range for power usage were selected. The system contains components that communicate via I2C, SPI, Serial, and analog signals:
+		</p>	
+		
+		<img src="pictures/HW_Arch_Spec.JPG" class="projectimg-wd">
+					<div class="caption">
+						Hardware Architectural Specification
+					</div>
+		<img src="pictures/Breadboard.jpg" class="projectimg-wd">
+					<div class="caption">
+						Complete breadboard system used for firmware development
+					</div>
+		
+		<h4>Firmware Overview</h4>
+		<p>
+			The firmware was developed in C and executed on an STM32L4 discovery board. A simplified overview of the main loop is shown below:
+		</p>
+
+			<img src="pictures/Main Loop.PNG" class="smallimg">
+
+		<p>
+			An interrupt driven by the real time clock fires at a regular interval. This wakes
+			the device up and runs the main loop. The mode is determined based on the state of the rotor speed variable.
+			Counters in the main loop increment upon each wakeup and trigger routines to collect data from sensors at the 
+			various sample rates. The raw data is stored in FIFO (First in First Out) buffers. 
+		</p>
+		<p>
+			The main loop counters also drive the data in the FIFO buffers to be read out, processed, packetized,
+			and saved to a FIFO buffer in the flash. The data remains in flash until it is successfully sent to the host. 
+			The device goes into sleep mode to save power and wakes up at the next RTC interrupt. Some combination of all
+			of these processes occur 120 times a second in powered mode.
+		</p>
+		
+		<h4>Acceleration Sensing</h4>
+		<p>
+			An LIS3DH MEMS accelerometer by STMicroelectronics was chosen for this device - it provides adequate resolution and consumes little 
+			power. A software low-pass filter was added to reduce noise.
+		</p>
+		
+		<h4>Rotation Rate and Rotor Temperature Sensing</h4>
+		<p>
+			A Hall effect sensor measures rotation rate by sensing rotor magnet passes. Two IR temperature sensors measure 
+			the temperature of the rotor magnets. The plot below shows sensed rotor speed and rotor temperature for a trial ramping from 25 - 100 RPM. 
+		</p>
+					
+		<img src="pictures/3_Mags.PNG" class="projectimg">
+			<div class="caption">
+				Hall effect sensors and two IR temperature sensor on bracket
+			</div>
+		<img src="pictures/RotorSpeedTest.jpg" class="projectimg">
+			<div class="caption">
+				Bracket temporarily attached to turbine for testing
+			</div>
+
+		
+		<img src="pictures/Rotor_Plots.JPG" class="projectimg-wd">
+					<div class="caption">
+						25-100 RPM sweep data
+						</div>
+		
+		<h4>Environmental Conditions Sensing</h4>
+		
+		<p>
+			Two I2C devices sense environmental temperature, pressure, and humidity. An anemometer and wind vane sense wind speed and direction. 
+			The annemometer outputs a sinusoid of varying amplitude and frequency. To trigger an interrupt with a digital signal, the anemometer signal passes through a comparator.
+		</p>
+		
+		<h4>Wireless Communication</h4>
+		<p>
+			Communication between the device and the host occurs via a wireless serial link between two Xbee radios. 
+			All of the data to be sent between the device and host is formatted into one of eight standardized packet types.
+			Each packet type contains data from different sensors. A python script was written to interpret and
+			display the data contained in these packets at the ground station. 
+		</p>
+		
+			<img src="pictures/Screen.jpg" class="projectimg">
+				<div class="caption">
+					Ground station python script output
+				</div>
+			
+
+					
+		<p>
+			Two measures are in place to verify data integrity. If either check fails, the ground station requests a re-send. 
+		</p>
+			<ul>
+				<li>
+				A counter variable is embedded in each packet as it is saved to flash. 
+				</li>
+				<li>
+				A CRC-8 is computed and stored as the 14th byte in each packet. 
+				</li>
+			</ul>
+			
+			
+
+		<h4>Results</h4>
+		<p>
+		Firmware functionality was demonstrated on the breadboarded system by collecting data from a test setup at the sponsor's 
+		facility. The firmware was delivered to the sponsor company for use on the forthcoming pcb prototype. 
+		</p>
+				<img src="pictures/Test Setup.jpg" class="projectimg"></td></tr>
+					<div class="caption">
+						Testing the system at the sponsor's facility
+					</div>
+					<img src="pictures/Brain_Box.PNG" class="projectimg">
+						<div class="caption">
+							CAD rendering of proposed packaging 
+						</div>
+
+						
+			<!--Copyright-->
+			<div class="copyright">©2020 Derick Thomas</div>
+	</body
+	
+	<!--Bootstrap script includes-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</html>

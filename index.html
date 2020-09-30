@@ -28,32 +28,41 @@
 
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">Derick Thomas</a>
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <a class="navbar-brand" href = "index.html">Derick Thomas</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Projects
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#home-projects">Web Project Gallery</a>
+          <a class="dropdown-item" href="SectionPropertiesCalculator.html">Section Properties Calculator</a>		
+          <a class="dropdown-item" href="SnippetSaver.html">Snippet Saver</a>
+          <a class="dropdown-item" href="AreaCalculator.html">Area Calculator</a>		
+				  <a class="dropdown-item" href="NodeKnot.html">Node Knot</a>	
+          <a class="dropdown-item" href="WaterSampler.html">UAV Water Sample Collector</a>	
+          <a class="dropdown-item" href="DataAquisition.html">Wind Turbine Data Collector</a>			  
+				</div>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Music.html">Music</a>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Resume.html">Resume</a>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="Contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
     </nav>
 
     <!-- Headshot section-->
@@ -65,26 +74,29 @@
     </section>
     <section id="home-headshot-text" class="p5">
       <h1>Hello.</h1>
-      <p>I make things for the internet.</p>
+      <p>I'm an Engineer and Creative in Portland, OR. <br>
+      Musician → Mechanical Engineer → Aerospace Structures Engineer → Software Developer</Musician>
     </section>
 
     <section id="home-game-text" class="p5">
       <h1>First, fun.</h1>
       <p>
       Take a moment to set a world record at something.</p>
+      <br>
     </section>
     <section id="home-game">
-    <iframe width="310" height="310" src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html" style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none;"></iframe>
+    <iframe width="300" height="300" src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html" style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;"></iframe>
     </section>
 
     <!-- Project 1 section-->
     <section id="home-projects">
-      <div class="container proj-deck">
-        <h1 class="m-0">Then work.</h1>
-        <p>Here are four full-stack applications that I built from scratch.</p><br>
-
+      <div class="container home-proj-deck">
+        <h1 class="m-0">Projects</h1><br>
+        <h3>Web Development</h3>
+        <br>
           <div class="card-deck">
-              <div class="card">
+              <div class="card card-proj">
+                <a href='/SectionPropertiesCalculator.html'>
                 <img
                   class="card-img-top project-thumb"
                   src="./img/SPC_thum.png"
@@ -99,8 +111,10 @@
                   </p>
                   <span><strong>JavaScript, Python, Flask</strong></span>
                 </div>
+              </a>
               </div>
-              <div class="card">
+              <div class="card card-proj">
+                <a href='/SnippetSaver.html'>
                 <img
                   class="card-img-top project-thumb"
                   src="./img/SS_thum.png"
@@ -109,14 +123,16 @@
                 <div class="card-body card-proj">
                   <h5 class="card-title">Snippet Saver</h5>
                   <p class="card-text">
-                    An organizer for code snippets that allows users to create an account, browse, filter, and sort other people's snippets, and create their own. Full JWT authentication.
+                    A tool that allows software developers to save,Jest organize, browse, and share code snippets. A MERN web application with JWT authentication. 
                   </p>
-                  <span><strong>React, ES6 JavaScript, NodeJS, MongoDB, Mongoose, Express, Jest</strong></span>
+                  <span><strong>React, ES6 JavaScript, NodeJS, MongoDB, Mongoose, Express, </strong></span>
                 </div>     
               </div>
+              </a>
             </div>
             <div class='card-deck mt-3'>
-              <div class="card">
+              <a href='/AreaCalculator.html'>
+              <div class="card card-proj">
                 <img
                   class="card-img-top project-thumb"
                   src="./img/AC_thum.png"
@@ -125,13 +141,15 @@
                 <div class="card-body card-proj">
                   <h5 class="card-title">Area Calculator</h5>
                   <p class="card-text">
-                    Application that allows the user to find the area of a region by drawing on an uploaded image. A tool that is useful in the flooring and countertop industry as well as for roommates trying to decide how to split utilities.
+                    An interactive tool that calculates the area of a region bounded by lines drawn by the user. Shapes can be drawn freehand (using dimensioning) or by tracing an uploaded phto. 
                   </p>
                   <span><strong>JavaScript, Python, Flask, MySQL</strong></span>
 
                </div>
+              </a>
               </div>
-            <div class="card">
+            <div class="card card-proj">
+              <a href='/NodeKnot.html'>
               <img
                 class="card-img-top project-thumb"
                 src="./img/NK_thum.png"
@@ -140,15 +158,154 @@
               <div class="card-body card-proj">
                 <h5 class="card-title">Node Knot</h5>
                 <p class="card-text">
-                  A technical demo that turned into a game demonstrating apporaches used to develop the VisualCalcs software. Players compete to post the fastest times to untangle node knots. It'll make more sense if you just play it. 
+                  A game where players compete to untangle messes of tangled lines in the shortest time possible. Players can generate puzzles that are added to a database which is drawn from at random. 
                 </p>
                 <span><strong>JavaScript, Python, Flask, MySQL</strong></span>
               </div>
+            </a>
             </div>
           </div>
+          <br><br>
+          <div class="card-deck">
+          <br>
+            <a href='/DataAquisition.html'>
+            <div class="card card-proj card-centered">
+              <img
+                class="card-img-top project-thumb project-img-padding"
+                src="./img/Brain_Box.PNG"
+                alt="Card image cap"
+              />
+              <div class="card-body card-proj">
+                <h5 class="card-title">Wind Turbine Monitor</h5>
+                <p class="card-text">
+                  A data aquisition system designed to remotely monitor the health and status of small-scale wind turbines. Records data from 10 sensors and streams wirelessly to a ground station.
+                </p>
+                <span><strong>C, ARM Cortex-M4, I2C, SPI, UART, CubeMX, Eclipse, Oscilloscope, Breadboard </strong></span>
+             </div>
+            </a>
+            </div>
+          <br><br>
+          <div class="card card-proj card-centered">
+            <a href='/WaterSampler.html'>
+            <img
+              class="card-img-top project-thumb project-img-padding"
+              src="./img/Drone_In_Creek.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body card-proj">
+              <h5 class="card-title">UAV Water Sample Collector</h5>
+              <p class="card-text">
+                A drone-based system capable of collecting multiple water samples for ecological analysis. Reduces dificulty in monitoring water quality in remote locations and enables researchers to collect samples over wide areas in minutes. 
+              </p>
+              <span><strong>Mill, Lathe, 3D Printing, SolidWorks, WaterJet</strong></span>
+            </div>
+          </a>
+          </div>
+        </div>
 
     </section>
 
+
+    <section id="home-career">
+      <div class="container home-proj-deck">
+      <h1 style='text-align: center'>Professional Path</h1>
+      <p style='text-align: center'>	I do my best work at the intersection of creativity and calculation.
+        <br>
+        Below are examples of the results I've been able to deliver.
+      <div class="card m-4 card-no-hover" style="width: 100%;">
+        <div class="card-body">
+          <img src='./img/electronics.jpg' style='height:300px' class='float-right pl-3'>
+          
+          <h4 class="card-title">Micro-prism alignment system</h4>
+          <h5>Tektronix, 2017</h5>
+          <p class="card-text">Designed and implemented a system that aligns and attaches a micro-scale optical prism to the end of a bundle of fiber optic cables. </p> 
+            <p>
+              Successful completion of this 6-month project led to 20% reduction in scrap for a 10+ MM/year military avionics product. The project was completed one month ahead of schedule, using 97% of the originally agreed-upon budget. </p>
+        </div>
+      </div>
+      <div class="card m-4 card-no-hover"style="width: 100%;">
+        <div class="card-body">
+          <img src='./img/aircraft.jpg' style='max-width: 300px' class='float-right'>
+          <h4 class="card-title">Airbus STC Analysis</h4>
+          <h5>Altech Aerospace, 2019</h5>
+          <p class="card-text">I was tapped to author a 300-page analysis validating a major alteration to the recently released Airbus A330-900neo. Client time constraints required delivery within 2 months from the project start date. A typical timeframe for similar analyses is around 6 months.
+          </p><p>
+            I combined my knowledge of traditional aircraft structural analysis with software engineering skills to automate the most time-intensive steps of report generation to deliver a thorough analyis of the structure ahead of the deadline.
+          </p><p>           
+            The report was accepted by the FAA with only one round of minor edits, indicating a complete and well-organized analysis. Altech went on to win additional contracts with a major client due to my on-time delivery. 
+          </p>
+        </div>
+      </div>
+
+     
+        </div>
+    </section>
+
+    <section id="home-music">
+      <div class="container home-proj-deck">
+      <h1 style='text-align: center'>Music</h1>
+
+      <p>Before bringing my creativity to engineering, I made a (short) career of performing and teaching music. During this time, I performed locally and on tour with several bands and on contract with theater companies while teaching a studio of private students. 
+        Below are a few of the recordings I've played on over the years. I'm playing drums on all. 
+      </p>
+      <div class="card p-4 m-4" style="width: 100%;">
+        <div class="card-body">
+        <h4>Seven Days</h4>
+      </p><p>
+        A piano trio arrangement of one of my favorite Sting tunes - performed at the Univeristy of Oregon with Nathan Alef and Milo Fultz (milofultz.com).  
+      </p><p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/85663141&color=%234b3a46&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+      </p></p>
+        <h4>The Valley</h4>
+      </p><p>
+        An original written by Matt Buetow, a folk/country artist that I've played with on and off since 2012. 
+      </p><p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138822907&color=%23b0b169&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+      </p><p>
+        <h4>We Are You</h4>
+      </p>
+        Following a chance meeting while on a bike tour down the Pacific Coast, I joined a certified Portland Garage Band. This song brings up nostalgia for sets starting at midnight, drink tickets, and sleeping in on Sundays. 
+      </p><p>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244521608&color=%23acacac&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+      </p>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <div id="home-about">
+    <div class="container home-proj-deck">
+      <h1 style='text-align: center'>About Me</h1>
+
+    When I'm not developing software, I enjoy running in the woods, working towards my private pilot liscense, writing music, playing sad country tunes on guitar, and travel. 
+		<br><br>
+    Thanks for stopping by. 
+    <br><br>
+
+
+    <div>
+      <a href="http://facebook.com" class="text-white">
+        <i class="fab fa-linkedin"></i
+      ></a>
+    </div>
+    <div>
+      <a href="http://instagram.com" class="text-white">
+        <i class="fab fa-instagram"></i
+      ></a>
+    </div>
+    <div>
+      <a href="http://github.com" class="text-white">
+        <i class="fab fa-github"></i
+      ></a>
+    </div>
+
+    
+    <img src='./img/SaltFlats.jpeg' style='  display: block;
+    margin-right: auto;
+    margin-left: auto; padding-bottom: 20px'>
+    </div>
+
+  </section>     
 
 
     <!--Footer-->

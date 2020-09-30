@@ -17,11 +17,15 @@
 
 body {
   overflow-x: hidden;
+  font-size: 14pt;
 }
 
-p,
-ul {
+p {
   font-size: 14pt;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .align-left {
@@ -51,15 +55,15 @@ ul {
   position: relative;
   padding-top: 30px;
   min-height: 250px;
-  background: rgba(12, 9, 11, 1);
-  color: #fff;
+  background: white;
+  color: black;
   text-align: center;
 }
 
 #home-headshot-text {
   position: relative;
   padding-bottom: 20px;
-  background: rgba(12, 9, 11, 1);
+  background: white
   color: #fff;
   text-align: center;
 }
@@ -67,8 +71,39 @@ ul {
 #home-game {
   position: relative;
   height: 340px;
-  background: rgba(88, 83, 89, 1);
-  color: #fff;
+  background: #dedede;
+  text-align: center;
+}
+
+#home-career {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background: #dedede;
+  text-align: left;
+}
+
+
+#home-music {
+  padding: 20px;
+  position: relative;
+  background: white;
+  text-align: left;
+}
+
+#home-about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background: #dedede;
+  text-align: left;
+}
+
+#project-game {
+  position: relative;
+  height: 320px;
+  background: white;
+  color: black;
   text-align: center;
 }
 
@@ -76,13 +111,24 @@ ul {
   position: relative;
   padding-top: 20px;
   padding-bottom: 1px;
-  background: rgba(88, 83, 89, 1);
-  color: #fff;
+  background: #dedede;
+  color: black;
   text-align: center;
 }
 
 .headshot-img {
   width: 250px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.professional-img {
+  width: 100px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #home-heading {
@@ -104,26 +150,57 @@ ul {
 
 .card {
   border-radius: 0;
-  max-width: 500px;
+  /*max-width: 500px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
 }
 
-.proj-deck {
+.home-proj-deck {
   max-width: 1000px;
 }
 
+.proj-deck {
+  max-width: 600px;
+}
+
+.proj-description {
+  text-align: left;
+}
 .card-proj {
-  background: #dedede
+  background: #dedede;
   border-radius: 0px;
   color: black;
 }
+
+.project-img-padding{
+  padding: 7px;
+  background-color: white;
+}
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
 
-.card-deck {
+.card-no-hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  cursor: default;
+}
+
+.card-video {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 560px;
+  height: 315px;
+}
+
+.card-centered{
+  max-width: 48%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #home-projects {
@@ -187,6 +264,6 @@ ul {
 }
 
 #main-footer {
-  background: black;
+  background: rgba(63, 59, 63, 1);
   color: white;
 }

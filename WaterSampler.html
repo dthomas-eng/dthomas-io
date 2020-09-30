@@ -1,76 +1,183 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" /><!--inlcude Bootsrap CSS-->
-	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet" /><!--include custom CSS-->
-	<link href="styles/mainCSS.css" rel="stylesheet" />
-</head>
-<body>
-<header><!--Bootstrap Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom"><a class="navbar-brand" href="index.html">Derick Thomas</a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"></button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mr-auto">
-	<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-	<li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Projects </a>
-	<div aria-labelledby="navbarDropdown" class="dropdown-menu"><a class="dropdown-item" href="VisualCalcs.html">Section Properties Calculator</a> <a class="dropdown-item" href="DataAquisition.html">Wind Turbine Data Transmitter</a></div>
-	</li>
-	<li class="nav-item"><a class="nav-link" href="Music.html">Music</a></li>
-	<li class="nav-item"><a class="nav-link" href="Resume.html">Resume</a></li>
-	<li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-</ul>
-</div>
-</nav>
-</header>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!--inlcude Bootsrap CSS-->
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      rel="stylesheet"
+    />
+    <!--include custom CSS-->
+    <link href="styles/mainCSS.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!--Bootstrap Navbar-->
+			<nav class="navbar navbar-expand-sm navbar-dark navbar-color">
+				<div class="container home-proj-deck">
+				<a class="navbar-brand" href = "index.html">Derick Thomas</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li>    <div class='text-center'>
+										<a href="http://facebook.com" class="text-white px-2">
+							<i class="fab fa-linkedin"></i
+						></a>
+						<a href="http://github.com" class="text-white px-2">
+							<i class="fab fa-github"></i
+						></a>
+							</div>
+						</li>
+					</ul>
+			</div>
+			</nav>
+    </header>
 
-<div class="metaprojectcontainer">
-<p></p>
+    <div class="metaprojectcontainer">
+      <p></p>
 
-<h3>UAV Water Sample Collector</h3>
+      <h3>UAV Water Sample Collector</h3>
 
-<p></p>
-<img class="projectimg" src="pictures/Assembled.PNG" />
-<p>During my first year of engineering school, I led a team to develop a drone-based water sample collection system. The idea for the project was based on a conversation I had with a water-researcher colleague who mentioned that the most tedious part of their work was spending 3-4 hours a day traveling the banks of the Willamette river collecting surface water samples. We set off to create a system that could fly from the roof of the lab and gather samples from points in the nearby river.</p>
+      <p></p>
+      <img class="projectimg" src="pictures/Assembled.PNG" />
+      <p>
+        During my first year of engineering school, I led a team to develop a
+        drone-based water sample collection system. The idea for the project was
+        based on a conversation I had with a water-researcher colleague who
+        mentioned that the most tedious part of their work was spending 3-4
+        hours a day traveling the banks of the Willamette river collecting
+        surface water samples. We set off to create a system that could fly from
+        the roof of the lab and gather samples from points in the nearby river.
+      </p>
 
-<p>Initial funding was granted following a successful&nbsp;pitch to the PSU Beta project board. Additional funding was awarded as we progressed to the finals (placing 4th out of 25 entrants) of the CleanTech Challenge - a prototyping and pitching competition focused on environmental technology. We purchased a waterproof drone and outfitted it with our system.</p>
+      <p>
+        Initial funding was granted following a successful&nbsp;pitch to the PSU
+        Beta project board. Additional funding was awarded as we progressed to
+        the finals (placing 4th out of 25 entrants) of the CleanTech Challenge -
+        a prototyping and pitching competition focused on environmental
+        technology. We purchased a waterproof drone and outfitted it with our
+        system.
+      </p>
 
-<p></p>
+      <p></p>
 
-<h4>Mechanical Design</h4>
+      <h4>Mechanical Design</h4>
 
-<p></p>
+      <p></p>
 
-<p>I designed and machined all of the mechanical elements of the collection devices and the custom landing gear. The final version of the water sample collector module (shown below) is the culmination of several iterative cycles over the span of the Summer. The collector module consists of a PTFE (Teflon) plunger actuated by a small solenoid. When the drone lands in water, a moisture sensor alerts a microcontroller and the solenoid is actuated allowing for a sample to be taken.</p>
-<img class="projectimg-wd" src="pictures/QMWSC.PNG" />
-<div class="caption">Water Sampler Final Design - Cross Section</div>
+      <p>
+        I designed and machined all of the mechanical elements of the collection
+        devices and the custom landing gear. The final version of the water
+        sample collector module (shown below) is the culmination of several
+        iterative cycles over the span of the Summer. The collector module
+        consists of a PTFE (Teflon) plunger actuated by a small solenoid. When
+        the drone lands in water, a moisture sensor alerts a microcontroller and
+        the solenoid is actuated allowing for a sample to be taken.
+      </p>
+      <img class="projectimg-wd" src="pictures/QMWSC.PNG" />
+      <div class="caption">Water Sampler Final Design - Cross Section</div>
 
-<h4>Materials</h4>
+      <h4>Materials</h4>
 
-<p>To create the prototype, I learned how to machine Aluminum, Steel, Delrin, PTFE, and Viton. FDM and Stereolithography 3D printing were used to accelerate development and reduce cost. The landing gear is made from water-jet cut carbon fiber joined together with Aluminum spacers.</p>
+      <p>
+        To create the prototype, I learned how to machine Aluminum, Steel,
+        Delrin, PTFE, and Viton. FDM and Stereolithography 3D printing were used
+        to accelerate development and reduce cost. The landing gear is made from
+        water-jet cut carbon fiber joined together with Aluminum spacers.
+      </p>
 
-<p></p>
+      <p></p>
 
-<h4>Ease of Use</h4>
+      <h4>Ease of Use</h4>
 
-<p></p>
+      <p></p>
 
-<p>Easy removal and handling of the samples following a collection mission was a big concern among the researchers we spoke with. The samplers are fully removable from the drone without tools. The samplers mount to the landing gear with thumbscrews and electrical connections are external, waterproof, and easily accessible. For easy transport, the landing gear can be removed from the drone as well.</p>
-<img class="projectimg" src="pictures/Col_Remove.PNG" />
-<div class="caption">Removable Water Sampler</div>
+      <p>
+        Easy removal and handling of the samples following a collection mission
+        was a big concern among the researchers we spoke with. The samplers are
+        fully removable from the drone without tools. The samplers mount to the
+        landing gear with thumbscrews and electrical connections are external,
+        waterproof, and easily accessible. For easy transport, the landing gear
+        can be removed from the drone as well.
+      </p>
+      <img class="projectimg" src="pictures/Col_Remove.PNG" />
+      <div class="caption">Removable Water Sampler</div>
 
-<p></p>
+      <p></p>
 
-<h4>Results</h4>
+      <h4>Results</h4>
 
-<p></p>
+      <p></p>
 
-<p>We were able to demonstrate functionality with short missions on ponds while remaining in the line of sight. FAA regulations prohibit fully autonomous use of drones, so we were unable to test our initially envisioned &quot;fly off the roof of the lab&quot; idea. Should these regulations change, this device is ready to be used by future water researchers.</p>
-<img class="projectimg" src="pictures/Drone_In_Creek.jpg" />
-<div class="caption">Fully Assembled Water Sampling System</div>
-</div>
-<!--Copyright-->
-
-<div class="copyright">&copy;2020 Derick Thomas</div>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script></html>
+      <p>
+        We were able to demonstrate functionality with short missions on ponds
+        while remaining in the line of sight. FAA regulations prohibit fully
+        autonomous use of drones, so we were unable to test our initially
+        envisioned &quot;fly off the roof of the lab&quot; idea. Should these
+        regulations change, this device is ready to be used by future water
+        researchers.
+      </p>
+      <img class="projectimg" src="pictures/Drone_In_Creek.jpg" />
+      <div class="caption">Fully Assembled Water Sampling System</div>
+    </div>
+    <!--Footer-->
+    <footer id="main-footer" class="text-center fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <br />
+              <a
+                href="https://www.linkedin.com/in/dtswe/"
+                target="_blank"
+                class="text-white px-2"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/dthomas-eng"
+                target="_blank"
+                class="text-white px-2"
+              >
+                <i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/derickfromoregon"
+                target="_blank"
+                class="text-white px-2"
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <p>&copy; <span id="year"></span> Derick Thomas</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -26,42 +26,37 @@
     <title>dthomas.io</title>
   </head>
 
-  <body>
+  <body class="site">
     <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">Derick Thomas</a>
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="container home-proj-deck">
+      <a class="navbar-brand" href = "index.html">Derick Thomas</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+        <li>    <div class='text-center'>
+                  <a href="https://www.linkedin.com/in/dtswe/" class="text-white px-2">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/dthomas-eng" class="text-white px-2">
+            <i class="fab fa-github"></i
+          ></a>
+            </div>
+          </li>
+        </ul>
+    </div>
     </nav>
 
+    
     <!-- Project 1 section-->
-    <section id="home-projects">
+    <section id="home-projects" class="site-content">
       <div class="container proj-deck">
         <h1 class="m-0">Snippet Saver</h1>
-        <p>The ultimate social network.</p>
-        <div class="card card-video">
+        <p>A snippet organizer for developers.</p>
+
+        <div class="card card-video my-3">
           <iframe
             width="560"
             height="315"
@@ -73,16 +68,12 @@
         </div>
         <a
           class="btn btn-dark my-3"
-          href="http://www.dthomas.io/SnippetSaver"
+          href="http://dthomas.io/SnippetSaver"
           target="_blank"
           >Try It</a
         >
-        <a
-          href="https://github.com/dthomas-eng/Snippet-Saver"
-          target="_blank"
-          class="btn btn-dark my-3"
-        >
-          See Code <i class="fab fa-github"></i>
+        <a class="btn btn-dark text-white my-3" href='https://github.com/dthomas-eng/Snippet-Saver' target='_blank'>
+          See Code <i class="fab fa-github text-white"></i>
         </a>
         <div class="proj-description">
           <h2>About</h2>
@@ -104,15 +95,30 @@
             Outcomes.
           </p>
         </div>
-      </div>
+        <div class="row mt-5">
+          <div class="col-auto mr-auto"><a href='SectionPropertiesCalculator.html'class='btn btn-dark'style='width:155px;'><i class="fa fa-angle-left text-white fa-lg"></i> Previous Project</a> </div>
+          <div class="col-auto"><a href='AreaCalculator.html' class='btn btn-dark' style='width:155px;'>Next Project <i class="fa fa-angle-right text-white fa-lg"></i></a></div>
+        </div>
     </section>
 
     <!--Footer-->
-    <footer id="main-footer" class="text-center p-4">
+    <footer id="main-footer" class="text-center fixed-bottom">
       <div class="container">
         <div class="row">
           <div class="col">
-            <p>Copyright &copy; <span id="year"></span> Derick Thomas</p>
+            <div class='text-center'>
+              <br>
+              <a href="https://www.linkedin.com/in/dtswe/"  target='_blank' class="text-white px-2">
+                <i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/dthomas-eng" target='_blank' class="text-white px-2">
+                <i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/derickfromoregon" target='_blank' class="text-white px-2">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <p> &copy; <span id="year"></span> Derick Thomas</p>
           </div>
         </div>
       </div>

@@ -170,6 +170,7 @@ a:hover {
   background: #dedede;
   border-radius: 0px;
   color: black;
+  z-index:900;
 }
 
 .project-img-padding{
@@ -201,6 +202,25 @@ a:hover {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.card-inner{
+  padding: 0;
+  margin:0;
+  width: 100%;
+  left: -15px;
+  background-color: #dedede;
+}
+
+.card-holder{
+  box-shadow: none;
+  cursor: default;
+}
+
+.card-holder:hover{
+  box-shadow: none;
+  cursor: default;
+  z-index: 1;
 }
 
 #home-projects {
@@ -265,5 +285,10 @@ a:hover {
 
 #main-footer {
   background: rgba(63, 59, 63, 1);
+  position: relative;
   color: white;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
+  text-align:center;
 }

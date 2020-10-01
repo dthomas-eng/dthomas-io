@@ -102,6 +102,7 @@ a:hover {
 
 #home-about {
   padding-top: 20px;
+  padding-bottom: 0px;
   position: relative;
   background: #dedede;
   text-align: left;
@@ -149,6 +150,8 @@ a:hover {
 
 .project-thumb {
   width: 100%;
+  border-radius: 0;
+
   /*max-width: 350px;
   display: block;
   margin-right: auto;
@@ -183,6 +186,7 @@ a:hover {
 .proj-description {
   text-align: left;
 }
+
 .card-proj {
   background: #dedede;
   border-radius: 0px;
@@ -227,9 +231,9 @@ a:hover {
 }
 
 .card-inner{
-  padding: 0;
+  padding: 0px;
+  left: -15px;
   width: 100%;
-  /*left: -15px;*/
   background-color: #dedede;
 }
 
@@ -318,4 +322,15 @@ a:hover {
   height: 110px;
   width: 100%;
   text-align:center;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+  .card-inner{
+    padding: 0;
+    width: 100%;
+    left: 0px;
+    background-color: #dedede;
+  }
 }

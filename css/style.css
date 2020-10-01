@@ -95,7 +95,6 @@ a:hover {
 
 
 #home-music {
-  padding: 20px;
   position: relative;
   background: white;
   text-align: left;
@@ -170,7 +169,7 @@ a:hover {
 }
 
 .carousel-height{
-  min-height: 270px;
+  min-height: 250px;
 }
 
 .home-proj-deck {
@@ -216,24 +215,24 @@ a:hover {
 }
 
 .card-centered{
-  max-width: 48%;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-.card-inner{
-  padding: 0;
-  margin:0;
-  width: 100%;
-  left: -15px;
-  background-color: #dedede;
-}
-
 .card-holder{
   box-shadow: none;
   cursor: default;
+  padding: 0;
 }
+
+.card-inner{
+  padding: 0;
+  width: 100%;
+  /*left: -15px;*/
+  background-color: #dedede;
+}
+
 
 .card-holder:hover{
   box-shadow: none;

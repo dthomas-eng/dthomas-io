@@ -75,20 +75,21 @@
 					<img src="pictures/Test Setup.jpg" class="threeinarow">
 				</div>
 			</div>
+		
 			
+			<p>
+				This project was a collaboration between the Portland State Electrical & Computer Engineering department
+				and a sponsor company that manufactures small-scale wind turbines. I graduated with a mechanical engineering degree and joined this project to learn more about microcontrollers and the C language. 
+				</p>
+				<p>
+				
+					The sponsor company discovered a market for affordable wind turbine monitoring devices and asked our team to design, build, and test a prototype of such a system. I led a team of three, was the sole developer of the firmware, and made most of the architectural descisions.
+			</p>
 			<div class='text-center'>
 				<a class="btn btn-dark text-white my-3" href='https://github.com/dthomas-eng/wind-turbine-data-aquisition-device' target='_blank'>
 					See Code <i class="fab fa-github text-white"></i>
 				</a>
 			</div>
-			
-			<p>
-				This project was a collaboration between the Portland State Electrical & Computer Engineering department
-				and a sponsor company that manufactures small-scale wind turbines. The goal of this project was to develop
-				a data acquisition system to remotely monitor the health and status of wind turbines. In addition to 
-				leading the team, I took on the firmware development to expand my experience with coding and working with microcontrollers. 
-			</p>
-		
 			<h2>Component Selection</h2>
 			
 			<p>
@@ -130,7 +131,7 @@
 				An interrupt driven by the real time clock fires at a regular interval. This wakes
 				the device up and runs the main loop. The mode is determined based on the state of the rotor speed variable.
 				Counters in the main loop increment upon each wakeup and trigger routines to collect data from sensors at the 
-				various sample rates. The raw data is stored in FIFO (First in First Out) buffers. 
+				various sample rates. The raw data is stored in FIFO buffers. 
 			</p>
 			<p>
 				The main loop counters also drive the data in the FIFO buffers to be read out, processed, packetized,
@@ -204,8 +205,7 @@
 
 			<h2>Results</h2>
 			<p>
-			Firmware functionality was demonstrated on the breadboarded system by collecting data from a test setup at the sponsor's 
-			facility. The firmware was delivered to the sponsor company for use on the forthcoming pcb prototype. 
+			A breadboarded prototype was used to collect data from a test-turbine at the sponsor's facility. The system was shown to meet all of the design requirements set out by our client. All design files and firmware were transfered to the sponsor company for use in further prototyping and eventual production of a commercial device. 
 			</p>
 					<img src="pictures/Test Setup.jpg" class="projectimg"></td></tr>
 						<div class="caption">
@@ -240,7 +240,7 @@
                 <i class="fab fa-instagram"></i
               ></a>
             </div>
-            <p class='text-center'> &copy; <span id="year"></span> Derick Thomas</p>
+            <p class='text-center'> &copy; 2020 Derick Thomas</p>
           </div>
         </div>
       </div>

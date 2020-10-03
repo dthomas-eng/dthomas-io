@@ -37,10 +37,12 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
         <li>    <div class='text-center'>
-                  <a href="https://www.linkedin.com/in/dtswe/" class="text-white px-2">
+                  <a href="https://www.linkedin.com/in/dtswe/" 
+                  target='_blank' class="text-white px-2">
             <i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://github.com/dthomas-eng" class="text-white px-2">
+          <a href="https://github.com/dthomas-eng" target='_blank'
+          class="text-white px-2">
             <i class="fab fa-github"></i
           ></a>
             </div>
@@ -71,16 +73,16 @@
         <div class="proj-description" style='text-align: justify'>
           <h2>About</h2>
           <p>
-            Snippet Saver is an app I wrote to save, organize, and share code snippets. It is a full-stack MERN application that uses JWT authentication. 
+            Snippet Saver is an app I developed from scratch to save, organize, and share code snippets. It is a full-stack MERN application with JWT authentication. 
             <br />
             <br />
-            Users can search a publicly avaliable database of snippets, like their favorites, create public and private snippets, edit snippets, and delete snippets. This app manages user authentication by storing a JWT in local storage. A password reset token is sent to valid email addresses using Nodemailer following a password reset request.
+            Users can search a database of publicly avaliable snippets, like their favorites, create public and private snippets, edit snippets, and delete snippets. This authentication system stores a JWT in local storage and checks it each time a protected route is requested. A password reset token can be sent to valid email addresses using Nodemailer when a password reset request is sent.
             <br />
             <br />
             I read 'Clean Code' by Robert Martin as I was writing the backend and used this project as a sandbox to experiment with test-driven development. I found that mocking API calls using Jest, then adding code to the express server to respond to the mocked calls resulted in a clean, stable workflow. By creating code in a way that offers near-complete test coverage, I had confidence as I refactored.
             <br />
             <br />
-            While relatively simple, this app has proven to be a useful tool as I continue to grow as a developer. Also, Snippet Saver provides a solid framework for future apps that require authentication.  
+            While relatively simple, this app has proven to be a useful code organizer as I continue to grow as a developer. Additionally, Snippet Saver provides a solid framework for future apps that require authentication.  
             <h2>Technologies</h2>
             This app uses React, ES6 JavaScript, NodeJS, MongoDB, Mongoose, Express, and Jest. It is hosted on Heroku.
           </p>

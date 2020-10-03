@@ -26,10 +26,10 @@
     <title>dthomas.io</title>
   </head>
 
-  <body class='site'>
+  <body class="site">
     <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
       <div class="container home-proj-deck">
-      <a class="navbar-brand" href = "index.html">Derick Thomas</a>
+      <a class="navbar-brand" href = "index">Derick Thomas</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -37,14 +37,10 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
         <li>    <div class='text-center'>
-                  <a href="https://www.linkedin.com/in/dtswe/" 
-                  target='_blank'
-                  class="text-white px-2">
+                  <a href="https://www.linkedin.com/in/dtswe/" target='_blank' class="text-white px-2">
             <i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://github.com/dthomas-eng" 
-          target='_blank'
-          class="text-white px-2">
+          <a href="https://github.com/dthomas-eng" target='_blank'class="text-white px-2">
             <i class="fab fa-github"></i
           ></a>
             </div>
@@ -53,65 +49,57 @@
     </div>
     </nav>
 
+    
     <!-- Project 1 section-->
-    <section id="project" class='site-content'>
+    <section id="home-projects" class="site-content">
       <div class="container proj-deck">
-        <h1 class="m-0">Node Knot</h1>
-        <p>A pretty decent game in Vanilla JS. And I don't even like games.</p>
+        <h1 class="m-0">Section Properties Calculator</h1>
+        <p>A modern tool for cross-section analysis.</p>
 
         <div class="card card-video my-3">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VfPrEG6t6ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oLnckaqIibA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <a
-        class="btn btn-dark my-3"
-        href="https://github.com/dthomas-eng/Node_Knot"
-        target="_blank"
-      >
-        See Code <i class="fab fa-github"></i>
-      </a>
-        <section id="project-game" class='mt-3 mb-0'>
-          <iframe
-            width="300"
-            height="300"
-            src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html"
-            style="
-              border: 0;
-              margin: 0;
-              position: absolute;
-              top: 150px;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              touch-action: none;
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
-              border-radius: 10px;
-            "
-          ></iframe>
-        </section>
-          <div class="proj-description" style='text-align: justify'>
-            <h2>About</h2>
-            <p>
-              Node Knot is a game I created using techniques learned while creating Area and Section Properties Calculators. 
-              <br />
-              <br />
-              Players compete to re-organize systems of connected, intersecting lines. A clock starts at the first click and stops when none of the lines intersect. If the player scores in the top 3 fastest times or top 3 shortest mouse-travel distances, their initials and score are saved for others to compete against. 
-              <br />
-              <br />
-              Players can also create Knots. When a new Node Knot is created, it is saved in a MySQL database that is drawn from at random as players solve puzzles. 
-              <br />
-              <br />
-              Go ahead and play a few rounds - see if you can get your initials on the leader board! 
-              <h2>Technologies</h2>
-              This app uses JavaScript, HTML5, CSS, Python, Flask, and MySQL.
-            </p>
-          </div>
-   
-        <div class="row mt-5">
-          <div class="col-auto mr-auto"><a href='AreaCalculator.html' class='btn btn-dark'style='width:155px;'><i class="fa fa-angle-left text-white fa-lg"></i> Previous Project</a> </div>
-          <div class="col-auto"><a href='DataAquisition.html' class='btn btn-dark' style='width:155px;'>Next Project <i class="fa fa-angle-right text-white fa-lg"></i></a></div>
+          class="btn btn-dark my-3"
+          href="https://visualcalcs.com/spclite/"
+          target="_blank"
+          >Try It</a
+        >
+        <a class="btn btn-dark text-white my-3" href='https://github.com/dthomas-eng/section-properties-calculator' target='_blank'>
+          See Code <i class="fab fa-github text-white"></i>
+        </a>
+        <div class="proj-description" style='text-align: justify'>
+          <h2>About</h2>
+          <p>
+            The Section Properties Calculator is an online CAD tool that calculates properties used to determine the structural capability of beams used in aerospace and civil applications.
+            <br />
+            <br />
+            While working as an aerospace structures engineer, I found myself calculating section properties several times a day. To do this, I had three options:
+            <ul>
+              <li>
+                Calculate properties by hand
+              </li>
+              <li>
+                Use a pre-existing Excel sheet 
+              </li>
+              <li>
+                Use CAD software
+              </li>
+            </ul>
+            Calculation by hand is tedious, requires approximations, and is prone to error. Excel requires the user to enter shapes in a non-intuitive way. Existing CAD software requires start up time, is expensive, and has a steep learning curve.
+            <br />
+            <br />
+            I was inspired by these drawbacks to create VisualCalcs.com and the Section Properties Calculator. VisualCalcs is a micro-SaaS venture offering easy to learn, always avaliable, and affordable online engineering tools. The Section Properties Calculator is an online CAD tool that addresses the pain points I experienced using other methods of section property calculation. 
+            <br />
+            <br />
+            <h2>Technologies</h2>
+            This app uses JavaScript, HTML5, CSS, and Python and Flask. 
+          </p>
         </div>
-      </div>
-      
+        <div class="row mt-5">
+          <div class="col-auto mr-auto"><a href='WaterSamplerProject' class='btn btn-dark'style='width:155px;'><i class="fa fa-angle-left text-white fa-lg"></i> Previous Project</a> </div>
+          <div class="col-auto"><a href='SnippetSaverProject' class='btn btn-dark' style='width:155px;'>Next Project <i class="fa fa-angle-right text-white fa-lg"></i></a></div>
+        </div>
     </section>
 
     <!--Footer-->

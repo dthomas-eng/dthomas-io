@@ -324,6 +324,51 @@ a:hover {
   text-align:center;
 }
 
+.col2 {
+  float: center;
+  margin: 1%;
+  width: 31%;
+}
+	
+.projectimg-wd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 90%;
+  max-width: 600px;
+}
+.threeinarow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 80%;
+  align: center;
+}
+.caption {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.smallimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 40%;
+}
+	
+.projectimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 80%;
+  max-width: 400px;
+}
 
 
 @media only screen and (max-width: 575px) {

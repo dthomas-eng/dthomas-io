@@ -214,8 +214,7 @@ a:hover {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 560px;
-  height: 315px;
+  width: 100%
 }
 
 .card-centered{
@@ -368,6 +367,19 @@ a:hover {
   margin-top: 25px;
   width: 80%;
   max-width: 400px;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 

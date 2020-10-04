@@ -17,50 +17,40 @@
       crossorigin="anonymous"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-
     <link rel="stylesheet" href="css/style.css" />
     <title>dthomas.io</title>
   </head>
 
   <body class='site'>
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-color">
       <div class="container home-proj-deck">
-      <a class="navbar-brand" href = "index">Derick Thomas</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-        <li>    <div class='text-center'>
-                  <a href="https://www.linkedin.com/in/dtswe/" 
-                  target='_blank'
-                  class="text-white px-2">
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/dthomas-eng" 
-          target='_blank'
-          class="text-white px-2">
-            <i class="fab fa-github"></i
-          ></a>
+        <a class="navbar-brand" href = "/">Derick Thomas</a>
+        <ul class="navbar-nav ml-auto">
+          <li>    
+            <div class='text-center'>
+              <a href="https://www.linkedin.com/in/dtswe/" target="_blank" class="text-white px-2">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/dthomas-eng" target="_blank" class="text-white px-2">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </li>
         </ul>
-    </div>
+      </div>
     </nav>
 
-    <!-- Project 1 section-->
+    <!-- Project Section-->
     <section id="project" class='site-content'>
       <div class="container proj-deck">
         <h1 class="m-0">Node Knot</h1>
         <p>A pretty decent game in Vanilla JS. And I don't even like games.</p>
 
         <div class="card card-video my-3">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VfPrEG6t6ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VfPrEG6t6ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
         <a
         class="btn btn-dark my-3"
@@ -137,26 +127,6 @@
       </div>
     </footer>
 
-    <!--Video Modal-->
-    <div class="modal fade" id="videoModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button class="close" data-dismiss="modal">
-              <span>&times;</span>
-            </button>
-            <iframe
-              src=""
-              frameborder="0"
-              height="350"
-              width="100%"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -173,43 +143,5 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-
-      // Configure slider:
-      $(".carousel").carousel({
-        interval: 6000,
-        pause: "hover",
-      });
-
-      //Lightbox init
-      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-
-      // Video Play
-      $(function () {
-        // Auto play modal video
-        $(".video").click(function () {
-          var theModal = $(this).data("target"),
-            videoSRC = $(this).attr("data-video"),
-            videoSRCauto =
-              videoSRC +
-              "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-          $(theModal + " iframe").attr("src", videoSRCauto);
-          $(theModal + " button.close").click(function () {
-            $(theModal + " iframe").attr("src", videoSRC);
-          });
-        });
-      });
-    </script>
   </body>
 </html>

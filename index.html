@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,43 +12,38 @@
       crossorigin="anonymous"
     />
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-
     <link rel="stylesheet" href="css/style.css" />
     <title>dthomas.io</title>
   </head>
 
   <body>
+
+    <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-color">
       <div class="container home-proj-deck">
-      <a class="navbar-brand" href = "index">Derick Thomas</a>
-
-			<ul class="navbar-nav ml-auto">
-        <li>    <div class='text-center'>
-                  <a href="https://www.linkedin.com/in/dtswe/" target="_blank" class="text-white px-2">
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/dthomas-eng" target="_blank" class="text-white px-2">
-            <i class="fab fa-github"></i
-          ></a>
+        <a class="navbar-brand" href = "/">Derick Thomas</a>
+        <ul class="navbar-nav ml-auto">
+          <li>    
+            <div class='text-center'>
+              <a href="https://www.linkedin.com/in/dtswe/" target="_blank" class="text-white px-2">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/dthomas-eng" target="_blank" class="text-white px-2">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </li>
         </ul>
-    </div>
+      </div>
     </nav>
 
-    <!-- Headshot section-->
+    <!-- Headshot Photo and Text -->
     <section id="home-headshot" class="p5">
       <img
         src="./img/Profile.jpg"
@@ -60,78 +56,87 @@
       Musician → Mechanical → Aerospace → Software
       </p>
     </section>
+
+    <!-- Game Text and iframe -->
     <section id="home-game-text" class="p5">
       <h1>First, fun.</h1>
       <p>
-      Take a moment to set a world record at something.</p>
+      Take a moment to set a world record at something.
+      </p>
       <br>
     </section>
     <section id="home-game">
-    <iframe width="300" height="300" src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html" style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;"></iframe>
+      <iframe width="300" height="300" src="https://derickthomas.pythonanywhere.com/tool/Node_Knot.html" style="border:0; margin: 0; position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%); touch-action: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">
+      </iframe>
     </section>
 
-    <!-- Project 1 section-->
+    <!-- Project Gallery -->
     <section id="home-projects">
       <div class="container home-proj-deck">
         <h1 class="m-0">Projects</h1>
-        Click to learn more. <br><br>
+        Click to learn more. 
+        <br><br>
         <h3>Web Development</h3>
         <br>
-          <div class="card-deck">
-              <div class="card card-proj">
-                <a href='/SectionPropertiesCalculatorProject'>
-                <img
-                  class="card-img-top project-thumb"
-                  src="./img/SPC_thum.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body card-proj">
-                  <h5 class="card-title">Section Properties Calculator</h5>
-                  <p class="card-text">
-                    Developed for VisualCalcs.com, a SaaS CAD software that calculates structural properties for
-                    beams used in civil and aerospace engineering. Think AutoCAD
-                    with a sharper focus. 
-                  </p>
-                  <span><strong>JavaScript, Python, Flask</strong></span>
-                </div>
-              </a>
+        <div class="card-deck">
+          <div class="card card-proj">
+            <a href='/SectionPropertiesCalculatorProject'>
+              <img
+                class="card-img-top project-thumb"
+                src="./img/SPC_thum.png"
+                alt="Card image cap"
+              />
+              <div class="card-body card-proj">
+                <h5 class="card-title">Section Properties Calculator</h5>
+                <p class="card-text">
+                  Developed for VisualCalcs.com, a SaaS CAD software that calculates structural properties for
+                  beams used in civil and aerospace engineering. Think AutoCAD
+                  with a sharper focus. 
+                </p>
+                <span><strong>JavaScript, Python, Flask</strong></span>
               </div>
-              <div class="card card-proj">
-                <a href='/SnippetSaverProject'>
-                <img
-                  class="card-img-top project-thumb"
-                  src="./img/SS_thum.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body card-proj">
-                  <h5 class="card-title">Snippet Saver</h5>
-                  <p class="card-text">
-                    A tool that allows software developers to save, organize, browse, and share code snippets. A MERN web application with JWT authentication. 
-                  </p>
-                  <span><strong>React, ES6 JavaScript, NodeJS, MongoDB, Mongoose, Express, Jest </strong></span>
-                </div>     
+            </a>
+          </div>
+
+          <div class="card card-proj">
+            <a href='/SnippetSaverProject'>
+              <img
+                class="card-img-top project-thumb"
+                src="./img/SS_thum.png"
+                alt="Card image cap"
+              />
+              <div class="card-body card-proj">
+                <h5 class="card-title">Snippet Saver</h5>
+                <p class="card-text">
+                  A tool that allows software developers to save, organize, browse, and share code snippets. A MERN web application with JWT authentication. 
+                </p>
+                <span><strong>React, ES6 JavaScript, NodeJS, MongoDB, Mongoose, Express, Jest </strong></span>
+              </div> 
+            </a>    
+          </div>
+
+        </div>
+        <div class='card-deck mt-3'>
+
+          <div class="card card-proj">
+            <a href='/AreaCalculatorProject'>
+              <img
+                class="card-img-top project-thumb"
+                src="./img/AC_thum.png"
+                alt="Card image cap"
+              />
+              <div class="card-body card-proj">
+                <h5 class="card-title">Area Calculator</h5>
+                <p class="card-text">
+                  An interactive tool that calculates the area of a region bounded by lines drawn by the user. Shapes can be traced from an uploaded photo or drawn freehand using dimensioning. 
+                </p>
+                <span><strong>JavaScript, Python, Flask, MySQL</strong></span>
               </div>
-              </a>
-            </div>
-            <div class='card-deck mt-3'>
-              <a href='/AreaCalculatorProject'>
-              <div class="card card-proj">
-                <img
-                  class="card-img-top project-thumb"
-                  src="./img/AC_thum.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body card-proj">
-                  <h5 class="card-title">Area Calculator</h5>
-                  <p class="card-text">
-                    An interactive tool that calculates the area of a region bounded by lines drawn by the user. Shapes can be traced from an uploaded photo or drawn freehand using dimensioning. 
-                  </p>
-                  <span><strong>JavaScript, Python, Flask, MySQL</strong></span>
-               </div>
-              </a>
-              </div>
-            <div class="card card-proj">
-              <a href='/NodeKnotProject'>
+            </a>
+          </div>
+
+          <div class="card card-proj">
+            <a href='/NodeKnotProject'>
               <img
                 class="card-img-top project-thumb"
                 src="./img/NK_thum.png"
@@ -145,248 +150,203 @@
                 <span><strong>JavaScript, Python, Flask, MySQL</strong></span>
               </div>
             </a>
-            </div>
           </div>
 
-          <div class="card-deck">
+        </div>
+        <div class="card-deck">
 
-            <div class='card card-holder'>
-            <br>
-            <br>
+          <div class='card card-holder'>
+            <br><br>
             <h3>Microcontroller Firmware</h3>
             <br>
-            <a href='/DataAquisitionProject'>
             <div class="card card-inner">
-              <img
-                class="card-img-top project-thumb project-img-padding"
-                src="./img/Brain_Box.PNG"
-                alt="Card image cap"
-              />
-              <div class="card-body card-proj">
-                <h5 class="card-title">Wind Turbine Monitor</h5>
-                <p class="card-text">
-                  A data aquisition system that remotely monitors the health and status of small-scale wind turbines. Records data from 10 sensors and streams wirelessly to a ground station.
-                </p>
-                <span><strong>C, ARM Cortex-M4, I2C, SPI, UART, CubeMX, Eclipse, Oscilloscope, Breadboard </strong></span>
-             </div>
-            </a>
-
+              <a href='/DataAquisitionProject'>
+                <img
+                  class="card-img-top project-thumb project-img-padding"
+                  src="./img/Brain_Box.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body card-proj">
+                  <h5 class="card-title">Wind Turbine Monitor</h5>
+                  <p class="card-text">
+                    A data aquisition system that remotely monitors the health and status of small-scale wind turbines. Records data from 10 sensors and streams wirelessly to a ground station.
+                  </p>
+                  <span><strong>C, ARM Cortex-M4, I2C, SPI, UART, CubeMX, Eclipse, Oscilloscope, Breadboard </strong></span>
+                </div>
+              </a>
+            </div>
           </div>
 
-            </div>
-            <div class='card card-holder'>
-              <br><br>
-
-              <h3>Mechanical Design</h3>
-              <br>
-
+          <div class='card card-holder'>
+            <br><br>
+            <h3>Mechanical Design</h3>
+            <br>
+            <div class="card card-inner">
               <a href='/WaterSamplerProject'>
-              <div class="card card-inner">
-
-            <img
-              class="card-img-top project-thumb project-img-padding"
-              src="./img/Drone_In_Creek.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body card-proj">
-              <h5 class="card-title">UAV Water Sample Collector</h5>
-              <p class="card-text">
-                A drone-based system that collects water samples for ecological analysis. Reduces dificulty in monitoring water quality in remote locations and enables researchers to collect samples over wide areas in minutes. 
-              </p>
-              <span><strong>3D Modeling, Mill, Lathe, 3D Printing, Soldering</strong></span>
+                <img
+                  class="card-img-top project-thumb project-img-padding"
+                  src="./img/Drone_In_Creek.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body card-proj">
+                  <h5 class="card-title">UAV Water Sample Collector</h5>
+                  <p class="card-text">
+                    A drone-based system that collects water samples for ecological analysis. Reduces dificulty in monitoring water quality in remote locations and enables researchers to collect samples over wide areas in minutes. 
+                  </p>
+                  <span><strong>3D Modeling, Mill, Lathe, 3D Printing, Soldering</strong></span>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
           </div>
         </div>
 
+      </div>
     </section>
 
-
+    <!-- Career Section -->
     <section id="home-career">
       <div class="container home-proj-deck">
-      <h1 style='text-align: center'>Me, The Engineer</h1>
-      <p style='text-align: center'>	<strong>I do my best work at the intersection of creativity and calculation.</strong>
+        <h1 style='text-align: center'>Me, The Engineer</h1>
+        <p style='text-align: center'>	<strong>I do my best work at the intersection of creativity and calculation.</strong>
         <br>
         Below are examples of the results I've delivered.
-      <div class="card my-4 card-no-hover" style="width: 100%;">
-        <div class="card-body">
-
-          <h3 class="card-title">Micro-Prism Alignment System</h3>
-          <h5>Tektronix</h5>
-          <img src='./img/electronics.jpg' style='max-height:400px; max-width: 100%' class='float-right ml-3 mb-3'>
-          <p class="card-text">I was brought in to address a bottleneck in the production line of a flagship opto-electronics product. As orders increased, a cruicial step involving the gluing of a micro-scale prism to the end of a fiber optic cable requiring precise positioning began to cause slowdowns and  significant scrap.
-          </p> 
-          <p>            
-          Instead of building a second work station and doubling the labor to meet demand (as initially proposed by management), I performed a full process analysis and proposed a redesign with improvements that would allow a throughput increase without adding labor. My proposal was accepted and I was granted a small budget.
-          </p> 
-          <p>
-          To keep cost down and arrive at an optimal soution, I used 3D printing to mock and test mechanical components. I took a highly iterative approach to design, collecting feedback from manufaturing technicians at each step. When nesscessary big-ticket items threatened to bust the budget, I designed and built those items in-house. 
-        </p> 
-        <p>      
-          Successful completion of this 6-month project led to 20% reduction in scrap for a $10M/year military avionics product with no need for additional labor. The project was completed one month ahead of schedule, using 97% of the alotted budget. </p>
+        <div class="card my-4 card-no-hover" style="width: 100%;">
+          <div class="card-body">
+            <h3 class="card-title">Micro-Prism Alignment System</h3>
+            <h5>Tektronix</h5>
+            <img src='./img/electronics.jpg' style='max-height:400px; max-width: 100%' class='float-right ml-3 mb-3'>
+            <p class="card-text">I was brought in to address a bottleneck in the production line of a flagship opto-electronics product. As orders increased, a cruicial step involving the gluing of a micro-scale prism to the end of a fiber optic cable requiring precise positioning began to cause slowdowns and  significant scrap.
+            </p> 
+            <p>            
+            Instead of building a second work station and doubling the labor to meet demand (as initially proposed by management), I performed a full process analysis and proposed a redesign with improvements that would allow a throughput increase without adding labor. My proposal was accepted and I was granted a small budget.
+            </p> 
+            <p>
+            To keep cost down and arrive at an optimal soution, I used 3D printing to mock and test mechanical components. I took a highly iterative approach to design, collecting feedback from manufaturing technicians at each step. When nesscessary big-ticket items threatened to bust the budget, I designed and built those items in-house. 
+            </p> 
+            <p>      
+            Successful completion of this 6-month project led to 20% reduction in scrap for a $10M/year military avionics product with no need for additional labor. The project was completed one month ahead of schedule, using 97% of the alotted budget. </p>
+          </div>
+        </div>
+        <div class="card my-4 card-no-hover"style="width: 100%;">
+          <div class="card-body">
+            <h3 class="card-title">Airbus STC Analysis</h3>
+            <h5>Altech Aerospace</h5>
+            <img src='./img/aircraft.jpg' style='max-height:400px; max-width: 100%' class='float-right ml-3 mb-3'>
+            <p class="card-text">I was tapped to author a 300-page analysis validating a major alteration to the recently released Airbus A330-900neo. Client time constraints required delivery within 2 months from the project start date. A typical timeframe for similar analyses is 6 months.
+            </p><p>
+              I combined my knowledge of traditional aircraft structural analysis with software engineering skills to automate the most time-intensive steps of report generation to deliver a thorough analyis of the structure ahead of the deadline.
+            </p><p>           
+              The report was accepted by the FAA with only one round of minor edits, indicating a complete and well-organized analysis. Altech went on to win additional contracts with a major client due to my on-time delivery. 
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card my-4 card-no-hover"style="width: 100%;">
-        <div class="card-body">
-          <h3 class="card-title">Airbus STC Analysis</h3>
-          <h5>Altech Aerospace</h5>
-          <img src='./img/aircraft.jpg' style='max-height:400px; max-width: 100%' class='float-right ml-3 mb-3'>
-          <p class="card-text">I was tapped to author a 300-page analysis validating a major alteration to the recently released Airbus A330-900neo. Client time constraints required delivery within 2 months from the project start date. A typical timeframe for similar analyses is 6 months.
-          </p><p>
-            I combined my knowledge of traditional aircraft structural analysis with software engineering skills to automate the most time-intensive steps of report generation to deliver a thorough analyis of the structure ahead of the deadline.
-          </p><p>           
-            The report was accepted by the FAA with only one round of minor edits, indicating a complete and well-organized analysis. Altech went on to win additional contracts with a major client due to my on-time delivery. 
-          </p>
-        </div>
-      </div>
 
-     
-        </div>
-
-
-            <div class="container home-proj-deck pb-4">
-                <div class="p-5 bg-white card-shadow" >
-                    <!-- Bootstrap carousel-->
-                    <div class="carousel slide" id="carouselExampleIndicators"  data-ride="carousel">
-
-                        <!-- Bootstrap inner [slides]-->
-                        <div class="carousel-inner align-middle carousel-height">
-                            <!-- Carousel slide-->
-                            <div class="carousel-item active">
-                                    <div class="media-body ml-3">
-                                        <blockquote class="blockquote border-0 p-0">
-                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Derick is a superlative problem solver, applying newly learned techniques swiftly and effectively. His resolve to reach perfection with his projects is backed by a gold standard work ethic. This was evident through his work as a structures engineer, but also is apparent in his development of web-based engineering tools. During our time together at the office he never hesitated to help a teammate in need of assistance, spending time at the white board until a satisfactory solution was reached. A true engineer that balances creativity and efficiency, and an invaluable asset to any team or project.</p>
-                                            <footer class="blockquote-footer">Will M. 
-                                                <cite title="Source Title">Altech Aerospace</cite>
-                                                <a href="https://www.linkedin.com/in/william-maurer-47a97292/" target="_blank" class="text-dark px-2">
-                                                  <i class="fab fa-linkedin fa-lg"></i
-                                                ></a>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                            </div>
-
-                            <!-- Carousel slide-->
-                            <div class="carousel-item">
-                                    <div class="media-body ml-3">
-                                        <blockquote class="blockquote border-0 p-0">
-                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Derick is a highly self-motivated and talented engineer. He contributed tremendously to the success of the Airbus A330-900neo STC project with his strong technical ability to perform and deliver complex structural analysis within a short time frame. I truly enjoyed having Derick on my team.</p>
-                                            <footer class="blockquote-footer">Khoa N.
-                                                <cite title>Manager, Altech and FAA representitive</cite>
-                                                <a href="https://www.linkedin.com/in/khoa-nguyen-8ba915189/" target="_blank" class="text-dark px-2">
-                                                  <i class="fab fa-linkedin fa-lg"></i
-                                                ></a>
-                                            </footer>
-
-
-
-                                        </blockquote>
-                                    </div>
-                            </div>
-
-                            <!-- Carousel slide-->
-                            <!--div class="carousel-item">
-                              <div class="media-body ml-3">
-                                <blockquote class="blockquote border-0 p-0">
-                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i> He demonstrated a strong work ethic, a disciplined mind, and a drive to succeed. Derick was
-                                      tasked with a challenging project, a tight schedule and a rigid budget. He exceeded expectations by hitting stretch
-                                      targets on time and within budget. Derick demonstrated that he can work effectively in a cross-functional environment
-                                      under difficult deadlines.
-                                      With his aptitude, adaptability, and dedication, I am confident Derick will be successful in your organization.</p>
-                                    <footer class="blockquote-footer">Jason H. 
-                                        <cite title="Source Title">Manager, Tektronix</cite>
-                                        <a href="https://www.linkedin.com/in/jason-hill-2835b89/" target="_blank" class="text-dark px-2">
-                                          <i class="fab fa-linkedin fa-lg"></i
-                                        ></a>
-                                    </footer>
-  
-                                 
-                                </blockquote>
-                            </div>
-                            </div-->
-                        </div>
-
-                        <!-- Bootstrap controls [dots]-->
-                        <a class="carousel-control-prev" style="width: 50px; left: -50px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left text-dark text-lg"></i>
-                        </a>
-                        <a class="carousel-control-next width-auto" style= "width: 50px; right: -50px;" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <i class="fa fa-angle-right text-dark text-lg"></i>
-                        </a>
-                    </div>
+      <!-- Quotes Carousel -->
+      <div class="container home-proj-deck pb-4">
+        <div class="p-5 bg-white card-shadow">
+          <!-- Bootstrap carousel-->
+          <div class="carousel slide" id="carouselExampleIndicators"  data-ride="carousel">
+            <!-- Bootstrap inner [slides]-->
+            <div class="carousel-inner align-middle carousel-height">
+              <!-- Carousel slide-->
+              <div class="carousel-item active">
+                <div class="media-body ml-3">
+                  <blockquote class="blockquote border-0 p-0">
+                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Derick is a superlative problem solver, applying newly learned techniques swiftly and effectively. His resolve to reach perfection with his projects is backed by a gold standard work ethic. This was evident through his work as a structures engineer, but also is apparent in his development of web-based engineering tools. During our time together at the office he never hesitated to help a teammate in need of assistance, spending time at the white board until a satisfactory solution was reached. A true engineer that balances creativity and efficiency, and an invaluable asset to any team or project.</p>
+                    <footer class="blockquote-footer">Will M. 
+                        <cite title="Source Title">Altech Aerospace</cite>
+                        <a href="https://www.linkedin.com/in/william-maurer-47a97292/" target="_blank" class="text-dark px-2">
+                          <i class="fab fa-linkedin fa-lg"></i
+                        ></a>
+                    </footer>
+                  </blockquote>
                 </div>
               </div>
 
+              <!-- Carousel slide-->
+              <div class="carousel-item">
+                <div class="media-body ml-3">
+                  <blockquote class="blockquote border-0 p-0">
+                  <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-dark"></i>Derick is a highly self-motivated and talented engineer. He contributed tremendously to the success of the Airbus A330-900neo STC project with his strong technical ability to perform and deliver complex structural analysis within a short time frame. I truly enjoyed having Derick on my team.</p>
+                  <footer class="blockquote-footer">Khoa N.
+                  <cite title>Manager, Altech and FAA representitive</cite>
+                  <a href="https://www.linkedin.com/in/khoa-nguyen-8ba915189/" target="_blank" class="text-dark px-2">
+                    <i class="fab fa-linkedin fa-lg"></i
+                  ></a>
+                  </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+              <!-- Bootstrap controls [dots]-->
+              <a class="carousel-control-prev" style="width: 50px; left: -50px;" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left text-dark text-lg"></i>
+              </a>
+              <a class="carousel-control-next width-auto" style= "width: 50px; right: -50px;" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <i class="fa fa-angle-right text-dark text-lg"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
+    <!-- Music Section -->
     <section id="home-music">
       <div class="container home-proj-deck">
-      <h1 style='text-align: center' class='mt-3'>Me, The Musician</h1>
-
-      <p class='text-center'>Prior to my engineering career, I performed and taught music professionally. I've performed locally and on tour with dozens of bands and on contract with theater companies while teaching a studio of private students. 
-        Below are a few of my favorite recordings I've played on over the years. I'm playing drums on all. 
-      </p>
-      <div class="card my-4 card-no-hover mb-5" style="width: 100%;">
-        <div class="card-body">
-        <h4>Seven Days</h4>
-      </p><p>
-        My piano trio arrangement of a great Sting tune - performed at the U of O with Nathan Alef and Milo Fultz.  
-      </p><p>
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/85663141&color=%234b3a46&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-      </p></p>
-        <h4>The Valley</h4>
-      </p><p>
-        An original written by Matt Buetow, a folk/country artist that I've played with on and off since 2012. 
-      </p><p>
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138822907&color=%23b0b169&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-      </p><p>
-        <h4>We Are You</h4>
-      </p>
-        Following a chance meeting while on a bike tour down the Pacific Coast, I joined a certified Portland Garage Band. This song evokes nostalgia for midnight sets, drink tickets, and sleeping in on Sundays. 
-      </p><p>
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244521608&color=%23acacac&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-      </p>
-    </div>
-  </div>
-</div>
+        <h1 style='text-align: center' class='mt-3'>Me, The Musician</h1>
+        <p class='text-center'>Prior to my engineering career, I performed and taught music professionally. I've performed locally and on tour with dozens of bands and on contract with theater companies while teaching a studio of private students. 
+          Below are a few of my favorite recordings I've played on over the years. I'm playing drums on all. </p>
+        <div class="card my-4 card-no-hover mb-5" style="width: 100%;">
+          <div class="card-body">
+            <h4>Seven Days</h4>
+            <p>
+            My piano trio arrangement of a great Sting tune - performed at the U of O with Nathan Alef and Milo Fultz.  
+            </p><p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/85663141&color=%234b3a46&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+            </p></p>
+            <h4>The Valley</h4>
+            </p><p>
+            An original written by Matt Buetow, a folk/country artist that I've played with on and off since 2012. 
+            </p><p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138822907&color=%23b0b169&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+            </p><p>
+            <h4>We Are You</h4>
+            </p>
+            Following a chance meeting while on a bike tour down the Pacific Coast, I joined a certified Portland Garage Band. This song evokes nostalgia for midnight sets, drink tickets, and sleeping in on Sundays. 
+            </p><p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244521608&color=%23acacac&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- About Section -->
     <div id="home-about">
-    <div class="container home-proj-deck">
-      <h1 style='text-align: center'>Me, The Person</h1>
-      <div class="card card-no-hover" style="width: 100%; margin-top: 20px; margin-bottom: 40px">
-        <div class="card-body">
-          <img src='./img/Pensive.jpeg' style='height:400px' class='float-left p-3'>
-          <h3>Interests</h3>
-              <br>
-              <i class='fas fa-running fa-lg text-dark'></i> Running - Recently ran my first 50k. 
-              <br><br>
-
-              <i class='fas fa-plane fa-lg text-dark'></i> Flying - I'm currently working on my private pilot licence. 
-              <br><br>
-
-              <i class='fa fa-volume-up fa-lg text-dark'></i> Music - I love playing sad country tunes on guitar, learning motown bass lines, and making electronic music on my OP-Z. 
-              <br><br>
-
-              <i class='fas fa-passport fa-lg text-dark'></i> Travel - favorite destinations include Belize, Mexico City, and Iceland. 
-
-    <br><br>
-    Thanks for stopping by. 
-    <br><br>
-
+      <div class="container home-proj-deck">
+        <h1 style='text-align: center'>Me, The Person</h1>
+        <div class="card card-no-hover" style="width: 100%; margin-top: 20px; margin-bottom: 40px">
+          <div class="card-body">
+            <img src='./img/Pensive.jpeg' style='height:400px' class='float-left p-3'>
+            <h3>Interests</h3>
+                <br>
+                <i class='fas fa-running fa-lg text-dark'></i> Running - Recently ran my first 50k. 
+                <br><br>
+                <i class='fas fa-plane fa-lg text-dark'></i> Flying - I'm currently working on my private pilot licence. 
+                <br><br>
+                <i class='fa fa-volume-up fa-lg text-dark'></i> Music - I love playing sad country tunes on guitar, learning motown bass lines, and making electronic music on my OP-Z. 
+                <br><br>
+                <i class='fas fa-passport fa-lg text-dark'></i> Travel - favorite destinations include Belize, Mexico City, and Iceland. 
+            <br><br>
+            Thanks for stopping by. 
+            <br><br>
+          </div>
         </div>
+      </div>
     </div>
-    
-    
-    <!--img src='./img/SaltFlats.jpeg' style='  display: block;
-    margin-right: auto;
-    margin-left: auto; padding-bottom: 20px'-->
-    </div>
-    
-
-  </section>     
-
 
     <!--Footer-->
     <footer id="main-footer" class="text-center">
@@ -411,28 +371,8 @@
       </div>
     </footer>
 
-    <!--Video Modal-->
-    <div class="modal fade" id="videoModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button class="close" data-dismiss="modal">
-              <span>&times;</span>
-            </button>
-            <iframe
-              src=""
-              frameborder="0"
-              height="350"
-              width="100%"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
@@ -447,43 +387,5 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-
-      // Configure slider:
-      $(".carousel").carousel({
-        interval: 6000,
-        pause: "hover",
-      });
-
-      //Lightbox init
-      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-
-      // Video Play
-      $(function () {
-        // Auto play modal video
-        $(".video").click(function () {
-          var theModal = $(this).data("target"),
-            videoSRC = $(this).attr("data-video"),
-            videoSRCauto =
-              videoSRC +
-              "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-          $(theModal + " iframe").attr("src", videoSRCauto);
-          $(theModal + " button.close").click(function () {
-            $(theModal + " iframe").attr("src", videoSRC);
-          });
-        });
-      });
-    </script>
   </body>
 </html>
